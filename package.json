@@ -1,0 +1,29 @@
+{
+  "name": "grok-voice-bridge",
+  "version": "1.0.0",
+  "description": "Serviço-ponte Node.js para conectar chamadas SIP da xAI (Grok Voice) a um agente de voz via WebSocket.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:audio": "node src/audio-stream.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "xai",
+    "grok",
+    "voice",
+    "sip",
+    "freeswitch",
+    "realtime"
+  ],
+  "author": "Diego Bortoli",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {}
+}
